@@ -1,12 +1,13 @@
- Select location, date, total_cases, total_deaths, population
- From portfolio_covid.coviddeaths
- order by 1,2
+ 
+ SELECT location, date, total_cases, total_deaths, population
+ FROM portfolio_covid.coviddeaths
+ ORDER BY 1,2
 
 -- Looking at Total Cases vs Total Deaths 
 
 
- Select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
- From portfolio_covid.coviddeaths
+ SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
+ FROM portfolio_covid.coviddeaths
  Where location like '%colombia%'
  order by 1,2
 
